@@ -1,0 +1,41 @@
+{
+  "study_version": "5.0.0",
+  "base_sampling_hz": 200,
+  "duration_s": 160,
+  "analysis_start_s": 20,
+  "analysis_duration_s": 120,
+  "monte_carlo_seeds": 30,
+  "sampling_rates_hz": [2, 5, 10, 20, 50, 100],
+  "sensor_heights_m": [0.0, 0.2, 0.4, 0.6],
+  "broadband_frequencies_hz": [0.2, 3.0, 0.1],
+  "lowband_frequencies_hz": [0.2, 0.6, 0.1],
+  "lateral_acceleration_rms_mps2": 0.2,
+  "accelerometer_noise_std_mps2": 0.2,
+  "gyro_noise_std_radps": 0.02,
+  "accelerometer_scale_std": 0.005,
+  "gyro_scale_std": 0.002,
+  "gravity_mps2": 9.80665,
+  "roll_axis_height_m": 0.35,
+  "roll_stiffness_Nm_per_rad": 53647.5,
+  "roll_damping_Nms_per_rad": 3243.4,
+  "payloads": {
+    "P0": {"sprung_mass_kg": 1180.0, "roll_inertia_kgm2": 520.0},
+    "P75": {"sprung_mass_kg": 1255.0, "roll_inertia_kgm2": 556.75},
+    "P150": {"sprung_mass_kg": 1330.0, "roll_inertia_kgm2": 593.5}
+  },
+  "payload_geometry": {
+    "model": "symmetric_point_mass_pair",
+    "vertical_height_above_roll_axis_m": 0.35,
+    "lateral_offset_m": 0.606217782649107,
+    "effective_roll_radius_m": 0.7
+  },
+  "road_moment_fraction_of_lateral_rms": 0.25,
+  "road_transfer_time_constant_s": 0.12,
+  "road_proxy_noise_fraction_of_rms": 0.25,
+  "road_proxy_delay_s": 0.05,
+  "payload_reacquisition_rms_std_fraction": 0.03,
+  "eiv_noise_guard_bins": 2,
+  "eiv_nyquist_fraction": 0.8,
+  "profile_relative_objective_threshold": 1.05,
+  "profile_grid_points": 201
+}
