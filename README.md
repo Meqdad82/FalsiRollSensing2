@@ -6,6 +6,8 @@ This repository contains the complete supplementary material and computational r
 
 All signals and experiments are synthetic. The package supports inspection, reproduction, and reuse of the reported sensor-design study under the MIT License.
 
+[![DOI](https://zenodo.org/badge/1399922425.svg)](https://doi.org/10.5281/zenodo.24389777)
+
 ## Repository contents
 
 - `supplementary_material.tex` and `supplementary_material.pdf`: standalone supplementary document.
