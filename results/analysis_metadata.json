@@ -1,0 +1,36 @@
+{
+  "study_version": "5.0.0",
+  "physical_experiment": false,
+  "generator_included": true,
+  "estimator": "profiled_frequency_domain_errors_in_variables_with_controls",
+  "distinct_full_parameter_fits": 810,
+  "profile_reoptimizations": 12060,
+  "seeds": 30,
+  "payload_pairings": [
+    "exact common acquisition",
+    "independent white noise",
+    "independent simulated acquisition phases/RMS/calibration/noise"
+  ],
+  "payload_geometry": {
+    "model": "symmetric_point_mass_pair",
+    "vertical_height_above_roll_axis_m": 0.35,
+    "lateral_offset_m": 0.606217782649107,
+    "effective_roll_radius_m": 0.7
+  },
+  "profile_grid_points_per_seed_condition": 201,
+  "road_proxy_sensitivity": {
+    "noise_fraction_of_rms": 0.25,
+    "delay_s": 0.05
+  },
+  "objective_normalization": "one_over_Nf_complex_sum; equivalent to twice the mean squared stacked real-imaginary residual",
+  "selected_trace_preprocessing": "same explicit antialias FIR and analysis interval as the 100 Hz rate-study condition",
+  "antialias_filter": "explicit 20*d+1 tap Kaiser(beta=5) FIR",
+  "config_sha256": "084beb33aeb77c141cc29a653c68235dde536e115fe99388b022afa6715a9467",
+  "script_sha256": "4967704025633e4c2334248888d32c105b5204c9f54fa84f089b377d9a2af74a",
+  "software": {
+    "python": "3.13.15",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}
